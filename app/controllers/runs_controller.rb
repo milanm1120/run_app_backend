@@ -16,11 +16,17 @@ class RunsController < ApplicationController
 
     def update
         run = Run.find_by_id(params[:id])
-        if item.update(item_params)
-            render json: runs
+        if run.update(run_params)
+            render json: run
         else
             render json: {error: "Unable to Update"}
         end
+    end
+
+    def destroy
+        run = Run.find_by_id(params[:id])
+        run.destroy
+        render json: {messsage: "Successfully Deleted #{run.run_type}"}
     end
     private
 
