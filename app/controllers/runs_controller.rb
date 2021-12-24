@@ -6,8 +6,22 @@ class RunsController < ApplicationController
 
     def create
         run = Run.new(run_params)
+        # byebug
+        if run.save
+            render json: run
+        else
+            render json: {error: "Run Not Saved"}
+        end
     end
 
+    def update
+        run = Run.find_by_id(params[:id])
+        if item.update(item_params)
+            render json: runs
+        else
+            render json: {error: "Unable to Update"}
+        end
+    end
     private
 
     def run_params
