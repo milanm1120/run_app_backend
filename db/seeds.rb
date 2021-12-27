@@ -7,9 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-milan = Runner.create(name: "Milan Mody", age: "35", gender: "Male", height: "70", weight: "175")
-bob = Runner.create(name: "Bob Doe", age: "30", gender: "Male", height: "67", weight: "140")
-jane = Runner.create(name: "Jane Doe", age: "28", gender: "Female", height: "62", weight: "118")
+milan = Runner.create(name: "Milan Mody")
+bob = Runner.create(name: "Bob Doe")
+jane = Runner.create(name: "Jane Doe")
 
 
 

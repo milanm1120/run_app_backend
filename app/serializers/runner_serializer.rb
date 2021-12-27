@@ -1,4 +1,4 @@
 class RunnerSerializer < ActiveModel::Serializer
-  attributes :id, :name, :age, :gender, :height, :weight
+  attributes :id, :name
   has_many :runs
 end
