@@ -22,6 +22,6 @@ class RunsController < ApplicationController
     private
 
     def run_params
-        params.require(:run).permit(:run_type, :time, :distance, :comments, :runner_id)
+        params.require(:run).permit(:run_type, :run_date, :time, :distance, :comments, :runner_id)
     end
 end
