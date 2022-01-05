@@ -1,7 +1,7 @@
 class RunsController < ApplicationController
     def index
         runs = Run.all
-        render({json: runs, except: [:created_at, :updated_at]})
+        render ({json: runs})
     end
 
     def create

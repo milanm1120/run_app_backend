@@ -1,6 +1,6 @@
 class RunnersController < ApplicationController
     def index
         runners = Runner.all
-        render json: runners
+        render ({json: runners})
     end
 end
